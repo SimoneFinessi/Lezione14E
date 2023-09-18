@@ -1,13 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabella con bottoni</title>
+    <style>
+        table {
+            width: 300px; /* Larghezza della tabella */
+            height: 200px; /* Altezza della tabella */
+        }
+    </style>
 </head>
 <body>
-    <p>
-        hello
-    </p>
+    <table border="1" id="myTable">
+        <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+    </table>
+    <button onclick="aggiungi()">1</button>
+    <button onclick="aggiungiRiga()">2</button>
+    <button onclick="rimuoviPrimaColonna()">3</button>
+    <button onclick="rimuoviPrimaRiga()">4</button>
+    <button onclick="mostraNumeroColonne()">5</button>
+    <button onclick="mostraNumeroRighe()" >6</button>
+    <button onclick="toggleTabella()">7</button>
+    <script src="script.js"></script>
 </body>
 </html>
